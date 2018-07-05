@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Piano Songs</title>
+  <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">  
+</head>
+
+<body>
+  <style>
+    body { font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+    .container { margin: auto; text-align: center; width: 80%; } 
+    .video-js { background-color: #fff; }
+    dl { width: 100%; }
+    dt { text-align: left; }
+    dd { margin-bottom: 50px; height: auto; }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin-top: 20px;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+  </style>
+  <h1>Piano Practice Songs</h1>
+  
+  <div class="container">
+    <button class="accordion">Unit 1</button>
+    <div class="panel">
+      <dl>
+        <dt>Hot Cross Buns</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Hot_Cross_Buns.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Five Woodpeckers</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Five_Woodpeckers_-_Practice.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Frog In The Middle</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/05_Frog_In_The_Middle.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Listen For Bells</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/08_Listen_for_Bells.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 2</button>
+    <div class="panel">
+      <dl>
+        <dt>Mouse In The House</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Mouse_in_the_House.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Rain Come Wet Me</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/02_Rain_Come_Wet_Me.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Let Us Chase The Squirrel</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/03_Let_Us_Chase_The_Squirrel.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Who's That?</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Who_s_That_.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Dinah</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/05_Dinah.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>The Wild Horses</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/06_The_Wild_Horses.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 3</button>
+    <div class="panel">
+      <dl>
+        <dt>Cuckoo</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/02_Cuckoo.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Silver Birch Trees</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Silver_Birch_Tree_-_Practice.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Love Somebody</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/03_Love_Somebody.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 4</button>
+    <div class="panel">
+      <dl>
+        <dt>Mary Had A Little Lamb</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Mary_Had_A_Little_Lamb_-_Practice.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Oranges and Lemons</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/02_Oranges_and_Lemons.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>I Have A Dog</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/03_I_Have_A_Dog.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Debka Horra</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Debka_Hora.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 5</button>
+    <div class="panel">
+      <dl>
+        <dt>Ode To Joy</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Ode_to_Joy.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Honeybee</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/02_Honeybee.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>I Hear The Mill Wheel</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/03_I_Hear_The_Mill_Wheel.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Yankee Doodle</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Yankee_Doodle.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Bagpipe</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/06_Bagpipe.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>La Cinquantaine</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin delayPlay" controls preload="auto" width="600" height="50" data-setup="{}" data-track= "https://www.hoffmanacademy.com/resources/audio/12_La_Cinquantaine_(piano).mp3">
+            <source src="https://www.hoffmanacademy.com/resources/audio/12_La_Cinquantaine_(piano).mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 6</button>
+    <div class="panel">
+      <dl>
+        <dt>Row, Row, Row Your Boat</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/01_Row,_Row,_Row,_Your_Boat_-_Practice.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Lady, Lady</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin delayPlay" controls preload="auto" width="600" height="50" data-setup="{}" data-track= "https://www.hoffmanacademy.com/resources/audio/04_Lady,_Lady_(piano_solo).mp3">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Lady,_Lady_(piano_solo).mp3" type="audio/mp3" />
+          </audio>
+        </dd>
+        <dt>Harvest Dance</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/03_Harvest_Dance.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Epic Journey</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/04_Epic_Journey.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Au Claire De Lune</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/08_Au_Clair_de_la_Lune_(piano_solo).mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Out At Sea</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/06_Out_at_Sea.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>In The Shadows</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/07_In_the_Shadows.mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Kye, Kye, Kule</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="https://www.hoffmanacademy.com/resources/audio/10_Kye_Kye_Kule_(piano_solo).mp3" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 7</button>
+    <div class="panel">
+      <dl>
+        <dt>Vivace</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>All the Pretty Horses</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Dance</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Are You Sleeping?</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+        <dt>Black Snake</dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+       </dl>
+    </div>
+<!--    <button class="accordion">Unit 8</button>
+    <div class="panel">
+      <dl>
+       <dt></dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 9</button>
+    <div class="panel">
+      <dl>
+        <dt></dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 10</button>
+    <div class="panel">
+      <dl>
+        <dt></dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 11</button>
+    <div class="panel">
+      <dl>
+        <dt></dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>
+    <button class="accordion">Unit 12</button>
+    <div class="panel">
+      <dl>
+        <dt></dt>
+        <dd>
+          <audio class="video-js vjs-default-skin" controls preload="auto" width="600" height="50" data-setup="{}">
+            <source src="" type="audio/mp3"/>
+          </audio>
+        </dd>
+      </dl>
+    </div>-->
+    <div class="clicker_container">
+      <audio class="video-js vjs-default-skin clicker" controls preload="auto" width="600" height="50" data-setup="{}">
+        <source src="assets/Metronome.mp3" type="audio/mp3"/>
+      </audio>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+  <script>
+    function toggle() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", toggle);
+        acc[i].addEventListener("touchstart", toggle);
+    }
+    
+    var activePlayer = null;
+//    var clicker = videojs(document.querySelector(".clicker"));
+//    clicker.on("ended", function() {
+//      if (activePlayer) {
+//        activePlayer.play();
+//      }
+//    });
+    
+    var delayPlayers = document.querySelectorAll(".delayPlay");
+    for (var player of delayPlayers) {
+      var track = player.dataset.track;
+      var vplayer = videojs(player);
+      
+      vplayer.ready(function() {
+         var p = this;
+         p.delayed = false;
+      });
+      
+      vplayer.on("play", function(){
+        var p = this;
+        
+        console.log("[play] player = ", p, "\ncurrentTime = ", p.currentTime());
+     
+        if (!p.delayed && p.currentTime() === 0) {
+          p.pause();
+          
+          activePlayer = p;
+          console.log("clicker = ", clicker);
+          clicker.play();
+        
+//          setTimeout(function(){
+//            p.delayed = true;
+//            
+//            //console.log("[setTimeout] player.delayed = ", p.delayed);
+//            p.play();
+//          }, 5000);
+        } else {
+          activePlayer = null;
+        }
+      });
+      
+      vplayer.on("pause", function(){
+        var p = this;
+        if (p.delayed) {
+          p.delayed = false; 
+        }
+      });
+    }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+    body { font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+    .container { margin: auto; text-align: center; width: 80%; } 
+    .video-js { background-color: #fff; }
+    dl { width: 100%; }
+    dt { text-align: left; }
+    dd { margin-bottom: 50px; height: auto; }
+
+/*    .hiddenContainer {
+        display: none;
+    }
+*/

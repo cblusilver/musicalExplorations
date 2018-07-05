@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Piano Songs</title>
+  <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css" rel="stylesheet">
+  <link href="assets/css/default.css" rel="stylesheet">  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page">
+    <h1 data-role="header" class="container">Piano Practice Songs</h1>
+    
+    <div id="mainContainer" data-role="main" class="container">
+    </div>
+    <div class="container hiddenContainer">
+      <audio class="video-js vjs-default-skin clicker" controls preload="auto" width="600" height="50" data-setup="{}">
+        <source src="assets/sound/Metronome.mp3" type="audio/mp3"/>    
+      </audio>
+    </div>
+  </div>
+  
+  <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+  <script src="assets/js/default.js"></script>
+</body>
+</html>
